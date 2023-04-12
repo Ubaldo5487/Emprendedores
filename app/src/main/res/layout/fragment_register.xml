@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/favor_de_llenar_siguientes_campos"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etNombreRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/usericon"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="@string/ingrese_su_nombre"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textCapSentences"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#5A5A5A"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etApellidoPaternoRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/usericon"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="@string/ingrese_su_apellido_paterno"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textCapSentences"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#5A5A5A"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etApellidoMaternoRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/usericon"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="@string/ingrese_su_apellido_materno"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textCapSentences"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#5A5A5A"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etTelefonoRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/phoneicon"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="@string/ingrese_su_n_mero_de_telefono"
+                android:importantForAutofill="no"
+                android:inputType="number|textCapSentences"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#5A5A5A"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etCorreoRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/emailicon"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="@string/ingrese_su_correo_electr_nico"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textWebEmailAddress"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#5A5A5A"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etUsuarioRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/usericon"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="@string/ingrese_su_nombre_de_usuario"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textCapSentences"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#5A5A5A"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etContrasenaRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/lockincon"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="@string/ingrese_su_contrase_a"
+                android:importantForAutofill="no"
+                android:inputType="textPassword|textCapSentences"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#5A5A5A"
+                tools:ignore="TextContrastCheck" />
+
+            <CheckBox
+                android:id="@+id/showPasswordRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Mostrar Contraseña" />
+
+            <Button
+                android:id="@+id/btnGuardarRegister"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/botontheme"
+                android:text="@string/guardar"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
