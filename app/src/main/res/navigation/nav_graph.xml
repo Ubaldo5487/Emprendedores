@@ -54,5 +54,13 @@
         <action
             android:id="@+id/action_homeFragment_to_createFragment"
             app:destination="@id/createFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_incidentDetailsFragment"
+            app:destination="@id/incidentDetailsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/incidentDetailsFragment"
+        android:name="com.example.proyectochignautla.IncidentDetailsFragment"
+        android:label="fragment_incident_details"
+        tools:layout="@layout/fragment_incident_details" />
 </navigation>

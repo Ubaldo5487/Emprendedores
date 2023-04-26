@@ -18,7 +18,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-            }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,6 +31,7 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         Button btnHomeCreate = view.findViewById(R.id.btnHomeCreate);
         Button btnHomeIndex = view.findViewById(R.id.btnHomeIndex);
+        Button btnHomeIncidentDetails = view.findViewById(R.id.btnHomeIncidentDetails);
 
         btnHomeCreate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +44,12 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_indexFragment);
+            }
+        });
+        btnHomeIncidentDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_incidentDetailsFragment);
             }
         });
     }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowActivity">
+    tools:context=".IncidentDetailsFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -11,7 +11,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:orientation="vertical"
             android:paddingLeft="10dp">
@@ -23,10 +23,10 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="130dp"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="Nombre: "
+                    android:text="Nombre Del Técnico: "
                     android:textColor="@color/white"
                     android:textSize="20dp" />
 
@@ -37,16 +37,16 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/sName"
+                        android:id="@+id/DTechnicianName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=""
-                        android:textColor="@color/white"
                         android:paddingLeft="10dp"
+                        android:text=""
+                        android:textColor="@color/white"
                         android:textSize="17dp" />
 
                     <TextView
-                        android:id="@+id/sFatherLastName"
+                        android:id="@+id/DTechnicianFatherLastName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -54,7 +54,7 @@
                         android:textSize="17dp" />
 
                     <TextView
-                        android:id="@+id/sMotherLastName"
+                        android:id="@+id/DTechnicianMotherLastName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -73,10 +73,10 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="130dp"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="Télefono: "
+                    android:text="Cargo Técnico: "
                     android:textColor="@color/white"
                     android:textSize="20dp" />
 
@@ -87,12 +87,12 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/sPhonenumber"
+                        android:id="@+id/DTechnicianPosition"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
                         android:text=""
                         android:textColor="@color/white"
-                        android:paddingLeft="10dp"
                         android:textSize="17dp" />
                 </LinearLayout>
 
@@ -111,7 +111,7 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="Edad: "
+                    android:text="Empresa: "
                     android:textColor="@color/white"
                     android:textSize="20dp" />
 
@@ -122,12 +122,12 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/sAge"
+                        android:id="@+id/DCompany"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
                         android:text=""
                         android:textColor="@color/white"
-                        android:paddingLeft="10dp"
                         android:textSize="17dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -141,10 +141,10 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="130dp"
+                    android:layout_width="230dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="Calle 1: "
+                    android:text="Fecha De La Incidencia: "
                     android:textColor="@color/white"
                     android:textSize="20dp" />
 
@@ -155,12 +155,12 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/sStreet1"
+                        android:id="@+id/DDate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
                         android:text=""
                         android:textColor="@color/white"
-                        android:paddingLeft="10dp"
                         android:textSize="17dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -173,10 +173,10 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="130dp"
+                    android:layout_width="220dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="Calle 2: "
+                    android:text="Hora De La Incidencia: "
                     android:textColor="@color/white"
                     android:textSize="20dp" />
 
@@ -187,44 +187,12 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/sStreet2"
+                        android:id="@+id/DTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
                         android:text=""
                         android:textColor="@color/white"
-                        android:paddingLeft="10dp"
-                        android:textSize="17dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="375dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/custom_card"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="Área: "
-                    android:textColor="@color/white"
-                    android:textSize="20dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/sArea"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textColor="@color/white"
-                        android:paddingLeft="10dp"
                         android:textSize="17dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -240,7 +208,7 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="Problema: "
+                    android:text="Refacciones: "
                     android:textColor="@color/white"
                     android:textSize="20dp" />
 
@@ -251,12 +219,12 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/sProblem"
+                        android:id="@+id/DParts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
                         android:text=""
                         android:textColor="@color/white"
-                        android:paddingLeft="10dp"
                         android:textSize="17dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -272,7 +240,7 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
-                    android:text="Descripción: "
+                    android:text="Comentarios: "
                     android:textColor="@color/white"
                     android:textSize="20dp" />
 
@@ -283,48 +251,15 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/sDescription"
+                        android:id="@+id/DComments"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
                         android:text=""
                         android:textColor="@color/white"
-                        android:paddingLeft="10dp"
                         android:textSize="17dp" />
                 </LinearLayout>
             </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="375dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/custom_card"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:text="Fecha: "
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/sCreated_at"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:paddingLeft="10dp"
-                    android:textSize="17dp" />
-            </LinearLayout>
-        </LinearLayout>
 
 
             <LinearLayout
@@ -350,17 +285,30 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/sStatus"
+                        android:id="@+id/DStatus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
                         android:text=""
                         android:textColor="@color/white"
-                        android:paddingLeft="10dp"
                         android:textSize="17dp" />
                 </LinearLayout>
+
             </LinearLayout>
+
+            <Button
+                android:id="@+id/btnDGuardar"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/botontheme"
+                android:text="Guardar" />
 
         </LinearLayout>
     </ScrollView>
 
-</LinearLayout>
+
+</FrameLayout>

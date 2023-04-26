@@ -130,6 +130,28 @@ public class CreateFragment extends Fragment {//implements DialogInterface.OnCan
                                 String eProblem = edProblem.getSelectedItem().toString();
                                 String eDescrip = edDescrip.getText().toString();
 
+                                /*
+                                IdIncidencia
+                                Incidencia
+                                TipoIncidencia
+                                FechaIncidencia
+                                Frecuencia
+                                NivelUrgencia
+                                tiporiesgo
+                                tipomentenimineto
+                                lugarinciencia
+                                areaincidencia
+                                nombrecolaborador
+                                puetoscolaborador
+                                areaefectada
+                                numpersonasafectadas
+
+
+
+
+
+                                 */
+
                                 String url = "https://hostchignautla.000webhostapp.com/insertReport.php?name=" + eName + "&fatherlastname=" + eFl + "&motherlastname=" + eMl + "&phonenumber=" + ePhone + "&age=" + eAge + "&colony=" + eColony + "&street1=" + eStreet1 + "&street2=" + eStreet2 + "&area=" + eArea + "&problem=" + eProblem + "&description=" + eDescrip;
 
                                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
